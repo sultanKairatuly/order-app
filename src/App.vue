@@ -1,14 +1,10 @@
 <template>
   <div id="app">
-    <PitHeader />
-    <PitNavigation />
+    <router-view></router-view>
   </div>
 </template>
 
-<script setup lang="ts">
-import PitHeader from "./components/PitHeader.vue";
-import PitNavigation from "./components/PitNavigation.vue";
-</script>
+
 
 <style lang="scss">
 * {
