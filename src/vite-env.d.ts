@@ -1,6 +1,6 @@
 export type navItem = {
     title: string,
-    image: string,
+    image?: string,
     route: string,
     id: string
 }

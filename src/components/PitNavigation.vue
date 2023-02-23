@@ -1,7 +1,6 @@
 <template>
   <div class="container">
     <div class="content">
-      <h3 class="title">Доставка по адресу Коктем 2 микрорайон</h3>
       <nav class="nav">
         <div class="nav__item" v-for="item in navList" :key="item.id">
           <div class="nav__item-image-container">
@@ -29,19 +28,19 @@ const { getImageByUrl } = useUtils();
 
 const navList: navList = reactive([
   {
-    title: "Еда",
+    title: "Рецепты",
     image: "../assets/nav/food.png",
     route: "",
     id: uuidv4(),
   },
   {
-    title: "Супермаркеты",
+    title: "Меню",
     image: "../assets/nav/market.avif",
     route: "",
     id: uuidv4(),
   },
   {
-    title: "Что угодно",
+    title: "Продукты",
     image: "../assets/nav/ssickstar.avif",
     route: "",
     id: uuidv4(),
@@ -53,19 +52,13 @@ const navList: navList = reactive([
     id: uuidv4(),
   },
   {
-    title: "Напитки и снэки",
+    title: "Ингредиенты",
     image: "../assets/nav/snacks.png",
     route: "",
     id: uuidv4(),
   },
   {
-    title: "Аптеки",
-    image: "../assets/nav/medicine.png",
-    route: "",
-    id: uuidv4(),
-  },
-  {
-    title: "Glovo Express",
+    title: "Вино",
     image: "../assets/nav/expres.avif",
     route: "",
     id: uuidv4(),
